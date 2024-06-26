@@ -1,0 +1,27 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f7f9f9;
+  height: 100vh;
+  display: grid;
+  place-content: center;
+}
+
+.main-container {
+  width: 60ch;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-container > form {
+  display: flex;
+  flex-direction: column;
+}
+
+.info {
+  text-wrap: wrap;
+}
