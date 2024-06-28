@@ -20,12 +20,14 @@
             type="tel"
             required
             class="phone"
+            pattern="^(8[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}"
             placeholder="Мобильный телефон" />
           <span class="error"></span>
           <input
             type="email"
             required
             class="email"
+            pattern=".+@.+\..+"
             placeholder="Электронная почта" />
           <span class="error"></span>
           <input
