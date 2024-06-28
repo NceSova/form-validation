@@ -11,16 +11,35 @@
       <div class="description">Доступ к сервисам электронного скуфизма</div>
       <div class="title">Регистрация</div>
       <div class="form-container">
-        <form action="">
-          <input type="text" class="second-name" placeholder="Фамилия" />
-          <input type="text" class="name" placeholder="Имя" />
-          <input type="tel" class="phone" placeholder="Мобильный телефон" />
-          <input type="email" class="email" placeholder="Электронная почта" />
-          <input type="password" class="password" placeholder="Пароль" />
+        <form novalidate action="">
+          <input type="text" required class="second" placeholder="Фамилия" />
+          <span class="error"></span>
+          <input type="text" required class="name" placeholder="Имя" />
+          <span class="error"></span>
+          <input
+            type="tel"
+            required
+            class="phone"
+            placeholder="Мобильный телефон" />
+          <span class="error"></span>
+          <input
+            type="email"
+            required
+            class="email"
+            placeholder="Электронная почта" />
+          <span class="error"></span>
           <input
             type="password"
-            class="repeat-password"
+            required
+            class="password"
+            placeholder="Пароль" />
+          <span class="error"></span>
+          <input
+            type="password"
+            required
+            class="repeat"
             placeholder="Повторите пароль" />
+          <span class="error"></span>
           <div class="info">
             Нажимая на кнопку "Зарегистрироваться", вы соглашаетесь с
             <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"

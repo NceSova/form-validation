@@ -51,7 +51,20 @@ body {
 }
 
 form input {
+  appearance: none;
+  border: 1px solid #333;
   padding: 8px;
+  outline: none;
+}
+
+input:focus:invalid {
+  outline: none;
+  background-color: lemonchiffon;
+}
+
+input:invalid {
+  border-color: red;
+  background-color: #ffdddd;
 }
 
 form button {
